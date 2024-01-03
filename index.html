@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Meta Tag Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Advanced Meta Tag Generator</h1>
+
+    <form id="metaTagForm">
+      <!-- Basic Info -->
+      <label for="pageTitle">Page Title:</label>
+      <input
+        placeholder="Your Page Title - Be Descriptive"
+        type="text"
+        id="pageTitle"
+        name="pageTitle"
+        required
+      /><br />
+
+      <label for="pageDescription">Page Description:</label>
+      <textarea
+        placeholder="A brief, informative description of your page content"
+        id="pageDescription"
+        name="pageDescription"
+        required
+      ></textarea
+      ><br />
+
+      <label for="keywords">Keywords (comma separated):</label>
+      <input
+        placeholder="Keyword 1, Keyword 2, Keyword 3"
+        type="text"
+        id="keywords"
+        name="keywords"
+        required
+      /><br />
+
+      <label for="themeColor">Theme Color (hex code, e.g., #ff5733):</label>
+      <input
+        placeholder="#ff5733"
+        type="text"
+        id="themeColor"
+        name="themeColor"
+        required
+      /><br />
+
+      <!-- Open Graph Tags -->
+      <label for="ogTitle">Open Graph Title:</label>
+      <input
+        placeholder="Your Open Graph Title"
+        type="text"
+        id="ogTitle"
+        name="ogTitle"
+        required
+      /><br />
+
+      <label for="ogDescription">Open Graph Description:</label>
+      <textarea
+        placeholder="Your Open Graph Description"
+        id="ogDescription"
+        name="ogDescription"
+        required
+      ></textarea
+      ><br />
+
+      <label for="ogImage">Open Graph Image URL:</label>
+      <input
+        placeholder="Your Open Graph Image URL"
+        type="url"
+        id="ogImage"
+        name="ogImage"
+        required
+      /><br />
+
+      <label for="ogUrl">Open Graph URL:</label>
+      <input
+        placeholder="Your Open Graph URL"
+        type="url"
+        id="ogUrl"
+        name="ogUrl"
+        required
+      /><br />
+
+      <label for="ogSiteName">Open Graph Site Name:</label>
+      <input
+        placeholder="Your Open Graph Site Name"
+        type="text"
+        id="ogSiteName"
+        name="ogSiteName"
+        required
+      /><br />
+
+      <!-- Twitter Card Tags -->
+      <label for="twitterTitle">Twitter Card Title:</label>
+      <input
+        placeholder="Your Twitter Card Title"
+        type="text"
+        id="twitterTitle"
+        name="twitterTitle"
+        required
+      /><br />
+
+      <label for="twitterDescription">Twitter Card Description:</label>
+      <textarea
+        placeholder="Your Twitter Card Description"
+        id="twitterDescription"
+        name="twitterDescription"
+        required
+      ></textarea
+      ><br />
+
+      <label for="twitterImage">Twitter Card Image URL:</label>
+      <input
+        placeholder="Your Twitter Card Image URL"
+        type="url"
+        id="twitterImage"
+        name="twitterImage"
+        required
+      /><br />
+
+      <label for="twitterUrl">Twitter Card URL:</label>
+      <input
+        placeholder="Your Twitter Card URL"
+        type="url"
+        id="twitterUrl"
+        name="twitterUrl"
+        required
+      /><br />
+
+      <label for="twitterHandle">Twitter Handle (@username):</label>
+      <input
+        placeholder="Your Twitter Handle (@username)"
+        type="text"
+        id="twitterHandle"
+        name="twitterHandle"
+        required
+      /><br />
+
+      <!-- Additional Tags -->
+      <label for="faviconUrl">Favicon URL:</label>
+      <input
+        placeholder="Your Favicon URL"
+        type="url"
+        id="faviconUrl"
+        name="faviconUrl"
+        required
+      /><br />
+
+      <label for="canonicalUrl">Canonical URL:</label>
+      <input
+        placeholder="Your Canonical URL"
+        type="url"
+        id="canonicalUrl"
+        name="canonicalUrl"
+      /><br />
+
+      <input type="submit" value="Generate" />
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
